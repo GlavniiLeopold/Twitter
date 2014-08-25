@@ -50,7 +50,7 @@ end
   end
 
   def followers
-    @title = "Followers"
+    @title = "Следящие"
     @user = User.find(params[:id])
     @users = @user.followers.paginate(page: params[:page])
     render 'show_follow'
